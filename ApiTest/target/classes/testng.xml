@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="测试套件">
+    <test name="测试用例">
+        <classes>
+            <class name="com.tester.cases.LoginTest">
+                <methods>
+                    <include name="loginTrue"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.tester.config.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>
