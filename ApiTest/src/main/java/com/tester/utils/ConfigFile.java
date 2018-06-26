@@ -16,6 +16,28 @@ public class ConfigFile {
         if (name == InterfaceName.LOGIN){
             uri = bundle.getString("login.uri");
         }
+        if (name == InterfaceName.CART){
+            uri = bundle.getString("cart.uri");
+        }
+        if (name == InterfaceName.CHECKOUT){
+            uri = bundle.getString("chechout.uri");
+        }
+        if (name == InterfaceName.SETNEWADDRESS){
+            uri = bundle.getString("setNewAddress.uri");
+        }
+        if (name == InterfaceName.APPLYPOINT){
+            uri = bundle.getString("applyPoint.uri");
+        }
+        if (name == InterfaceName.APPLYCOUPON){
+            uri = bundle.getString("applyCoupon.uri");
+        }
+        if (name == InterfaceName.SAVEORDER){
+            uri = bundle.getString("saveOrder.uri");
+        }
+        if (name == InterfaceName.PAYRESULT){
+            uri = bundle.getString("payresult.uri");
+        }
+
 
         testUrl = address + uri;
 

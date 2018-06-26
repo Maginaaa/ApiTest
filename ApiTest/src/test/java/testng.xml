@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="测试场景">
+
+    <test name="登录">
+        <classes>
+            <class name="com.tester.cases.JointUrl"/>
+            <class name="com.tester.cases.LoginTest">
+                <methods>
+                    <include name="loginTrue"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="香港地址下单">
+        <groups>
+            <run>
+                <include name="hongKongPlaceOrder"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.tester.cases.AddToShoppingCartTest"/>
+            <class name="com.tester.cases.CheckoutTest"/>
+            <class name="com.tester.cases.SetNewAddressClassTest"/>
+            <class name="com.tester.cases.ApplyPointTest"/>
+            <class name="com.tester.cases.ApplyCouponTest"/>
+            <class name="com.tester.cases.SaveOrderTest"/>
+            <class name="com.tester.cases.PayResultTest"/>
+            <class name="com.tester.cases.PrepayCancleTest"/>
+        </classes>
+    </test>
+
+    <test name="多仓下单">
+        <groups>
+            <run>
+                <include name="differentSpacePlaceOrder"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.tester.cases.AddToShoppingCartTest"/>
+            <class name="com.tester.cases.CheckoutTest"/>
+            <class name="com.tester.cases.SetNewAddressClassTest"/>
+            <class name="com.tester.cases.ApplyPointTest"/>
+            <class name="com.tester.cases.ApplyCouponTest"/>
+            <class name="com.tester.cases.SaveOrderTest"/>
+            <class name="com.tester.cases.PayResultTest"/>
+            <class name="com.tester.cases.PrepayCancleTest"/>
+        </classes>
+    </test>
+
+
+
+
+    <listeners>
+        <listener class-name="com.tester.config.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>

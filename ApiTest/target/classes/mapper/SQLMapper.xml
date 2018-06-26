@@ -4,8 +4,45 @@
 
 <mapper namespace="com.tester.model">
     <!--获取登录接口case-->
-    <select id="loginCase" parameterType="Integer" resultType="com.tester.model.LoginCase">
+    <select id="login_case" parameterType="Integer" resultType="com.tester.model.LoginCase">
         select * from login_case
         where id=#{id};
     </select>
+
+    <!--获取购物车case中除商品属性以外的其他信息-->
+    <select id="cart_case" parameterType="Integer" resultType="com.tester.model.CartCase">
+        select * from cart_case
+        where id=#{id}
+    </select>
+
+    <!--获取购物车case中商品属性-->
+    <select id="marque_case" parameterType="Integer" resultType="com.tester.model.MarqueCase">
+        select * from marque_case
+        where id=#{id}
+    </select>
+
+    <!--获取收货地址-->
+    <select id="address_case" parameterType="Integer" resultType="com.tester.model.AddressCase">
+        select address_id from address_case
+        where id=#{id}
+    </select>
+    
+    <!--获取支付基础信息-->
+    <select id="save_order_case" parameterType="Integer" resultType="com.tester.model.SaveOrderCase">
+        select * from save_order_case
+        where id=#{id}
+    </select>
+
+    <!--获取收货人信息-->
+    <select id="payer_case" parameterType="Integer" resultType="com.tester.model.PayerCase">
+        select * from payer_case
+        where id=#{id}
+    </select>
+
+    <!--查看支付结果-->
+    <select id="pay_result_case" parameterType="Integer" resultType="com.tester.model.PayResultCase">
+        select * from pay_result_case
+        where id=#{id}
+    </select>
+
 </mapper>

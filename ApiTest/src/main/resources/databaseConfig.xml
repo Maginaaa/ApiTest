@@ -12,10 +12,10 @@
                 <!-- 加载数据驱动 -->
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <!-- 数据库连接地址 -->
-                <property name="url" value="jdbc:mysql://localhost:3306/wconcept_api_test"/>
+                <property name="url" value="jdbc:mysql://10.106.14.176:3306/wconcept_api_test?serverTimezone=UTC"/>
                 <!-- 数据库用户、密码 -->
                 <property name="username" value="root"/>
-                <property name="password" value="123456"/>
+                <property name="password" value="root"/>
             </dataSource>
         </environment>
     </environments>
